@@ -1,0 +1,26 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 SELECT * FROM users_schema.users;\
+\
+INSERT INTO users (first_name, last_name, email) VALUES (\'93Sam\'94,\'94Dillard\'94, \'93Sammy2nite@aol.com\'94), (\'93Mike\'94,\'94Lee\'94, \'93mLee@aol.com\'94), (\'93Krib\'94,\'94Dilson\'94, \'93kirbeee@aol.com\'94);\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 SELECT * FROM users_schema.users;\
+\
+SELECT * FROM users_schema.users WHERE email = \'93Sammy2nite@aol.com\'94;\
+\
+SELECT TOP 1 [first_name], [last_name], [email] FROM users_schema.users ORDER BY [id] DESC;\
+\
+UPDATE users SET last_name = 'Pancakes' WHERE id = 3;\
+\
+SET SQL_SAFE_UPDATES = 0; \
+\
+DELETE FROM users WHERE id = 2;\
+\
+SELECT * FROM users ORDER BY first_name DESC;\
+ }
