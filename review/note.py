@@ -16,3 +16,13 @@ for x in range(0,10,2):
 
 for x in range(5,10,-3):
     print(X)
+
+
+
+# function basics
+def add(a,b):
+    x = a + b
+    return x
+
+new_val=add(2,5)
+print(new_val)
