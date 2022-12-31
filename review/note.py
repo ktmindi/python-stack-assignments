@@ -15,7 +15,7 @@ for x in range(0,10,2):
     print(x)
 
 for x in range(5,10,-3):
-    print(X)
+    print(x)
 
 
 
@@ -32,7 +32,7 @@ print(new_val)
 def say_hi(name):
     print("hi" + name)
 
-say_hi(mindy)
+#say_hi(mindy)
 
 # OOP basics
 class User:
