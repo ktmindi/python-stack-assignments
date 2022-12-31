@@ -33,3 +33,14 @@ def say_hi(name):
     print("hi" + name)
 
 say_hi(mindy)
+
+# OOP basics
+class User:
+    bank_name = "First Bank Of USA"
+    def __init__(self,name,email):
+        self.name = name
+        self.email = email
+        self.account_balance = 0
+
+guido = User("Eduardo", "eddie@rawr.com")
+print(guido.name)
