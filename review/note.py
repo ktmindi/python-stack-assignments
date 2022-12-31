@@ -26,3 +26,10 @@ def add(a,b):
 
 new_val=add(2,5)
 print(new_val)
+
+
+
+def say_hi(name):
+    print("hi" + name)
+
+say_hi(mindy)
