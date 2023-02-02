@@ -9,7 +9,7 @@ class Recipe:
         self.name = db_data['name']
         self.description = db_data['description']
         self.instructions = db_data['instructions']
-        self.under30 = db_data['under30']
+        self.under_30 = db_data['under30']
         self.date_made = db_data['date_made']
         self.user_id = db_data['user_id']
         self.created_at = db_data['created_at']
