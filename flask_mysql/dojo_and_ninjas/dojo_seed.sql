@@ -1,0 +1,2 @@
+SELECT * FROM dojos_and_ninjas_schema.dojos;
+INSERT INTO dojos (name) VALUES ('LA'), ('MIAMI'), ('SEATTLE'), ('CHICAGO'), ('WASHINGTON DC'), ('TEXAS'), ('UTAH'), ('COLORADO'), ('NEW YORK'), ('CANADA');
