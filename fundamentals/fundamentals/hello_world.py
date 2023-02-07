@@ -22,3 +22,5 @@ name='BobbyD'
 age=19
 age2=35
 print("My name is %s and everybody thinks I'm %d but I am actually %d" %(name,age,age2))
+
+#to run a python file, open the terminal > cd into the project folder > type python3 hello_world.py
