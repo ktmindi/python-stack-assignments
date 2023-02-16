@@ -1097,3 +1097,4 @@ print(f'Your favorite color is: {favorite_color}')
 
 # Your favorite color is: yellow
 ```
+- For demo code and explanation look at python-stack-assignments > fundamentals > oop > monty_python > three_questions.py
