@@ -1098,3 +1098,53 @@ print(f'Your favorite color is: {favorite_color}')
 # Your favorite color is: yellow
 ```
 - For demo code and explanation look at python-stack-assignments > fundamentals > oop > monty_python > three_questions.py
+---
+### Multiple Arguments
+- When we want to create a function that can accept a varying number of arguments we can use the `splat` operator which is the `asterisk` symbol
+    ```python
+    def manyargs(arg1, *args):
+        print("Got", arg1, "and", args)
+    
+    manyargs("one")
+    #output: got one and ()
+    manyargs("one", "two")
+    #output: got one and ('two')
+    manyargs("one", "two", "three")
+    #output: got one and ('two', 'three')
+
+    #remember that a tuple is an iterable, just like a list therefore if we want to access each of the arguments passed over individually we can use a loop
+    def manyargs(arg1, *args):
+        for a in args:
+            print(a)
+    manyargs("one","two","three")
+    #output: 
+    # 2
+    # 3
+    ```
+- After the first argument all remaining arguments passed in are in the args parameter
+    - As indicated by the () syntax the remaining arguments appears to be a tuple
+- Because we prefixed the final parameter with an asterisk all the arguments that dont match a required parameter are *packed* into a single **tuple**
+<br>
+<br>
+---
+<br>
+
+# Introduction to Data Structures
+
+### Linked Lists
+---
+### Other Data Structures
+---
+### Sorting
+---
+### Bubble Sort
+---
+### Ternary Operators
+---
+### Lambdas
+---
+### Sequences
+---
+### TDD
+---
+### Unittest and Assertions
