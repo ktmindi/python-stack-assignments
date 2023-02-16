@@ -46,15 +46,28 @@ class User:
         print(f"user: {self.name}, account two balance: {self.account['accounttwo'].display_account_info()}")
         return self
 
-    def transfer_money(self, amount, user):
-        self.amount -= amount
-        user.amount += amount
-        self.display_user_balance()
-        user.display_user_balance()
-        return self
+# fixed transfer_money method 
+# code before looked like 
+# def transfer_money(self,amount,user):
+        # self.amount -= amount
+        # user.amount += amount
+        # self.display_user_balance()
+        # user.display_user_balance()
+        # return self
+# this only works in the user.py file because each user has an amount attribute. when we combine the bank account class with the user class this code needs to be updated 
+    def transfer_money(self, user, amount):
+        print("*" * 80)
+        print(f"Transferring {amount} from {self.name} to {user.name}.")
+        self.account['accountone'].withdraw(amount)
+        user.account['accountone'].deposit(amount)
+        print("Transfer Complete")
 
 
 stacy = User("stacy")
-
-stacy.account['checking'].deposit(100)
+brad = User("brad")
+#debugged by changing checking to account one in line below
+stacy.account['accountone'].deposit(100)
+stacy.display_user_balance()
+stacy.transfer_money(brad, 200)
+brad.display_user_balance()
 stacy.display_user_balance()
